@@ -15,7 +15,7 @@ object SparkStreaming {
 
     // Add lib dependencies Spark core and spark streaming to sbt file//
     // Create a DStream that will connect to hostname:port, like localhost:9999
-    val lines = ssc.socketTextStream( args(1), args(2).toInt))
+    val lines = ssc.socketTextStream( args(1), args(2).toInt)
     // Split each line into words
     val words = lines.flatMap(line => line.split(" "))
     val tuples = words.map(word => (word, 1))
