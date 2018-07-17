@@ -4,7 +4,7 @@ package com.sparkstreaming
   * Created by adity on 7/17/2018.
   */
 
-import org.apache.spark.streaming.{ StreamingContext,Seconds}
+import org.apache.spark.streaming.{StreamingContext,Seconds}
 import org.apache.spark.SparkConf
 object GetDepartmentTraffic {
 
