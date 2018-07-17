@@ -17,6 +17,7 @@ object KafkaSparkStreaming {
     val ssc = new StreamingContext(conf, Seconds(10))
     val KafkaParams = Map[String,String]("metadata.broker.list" -> "")
     val topicSet = Set("fkdemodg")
+    //Stream to consume messages from the kafka topic//
     val stream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,KafkaParams,topicSet)
     val messages = Stream.map(s => s._2)
     val depatmessages = messages.filter( msg => {
