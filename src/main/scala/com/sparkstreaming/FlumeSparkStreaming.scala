@@ -5,7 +5,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.flume._
 
 /**
-  * Created by adity on 7/17/2018.
+  * Created by Thanu on 7/17/2018.
   */
 object FlumeSparkStreaming {
 
