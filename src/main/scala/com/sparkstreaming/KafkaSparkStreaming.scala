@@ -1,7 +1,7 @@
 package com.sparkstreaming
 
 /**
-  * Created by adity on 7/17/2018.
+  * Created by Thanu on 7/17/2018.
   */
 import org.apache.commons.codec.StringDecoder
 import org.apache.spark.SparkConf
